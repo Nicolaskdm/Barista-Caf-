@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*
+
+fonts: "Lora", "Roboto", "Playwrite CU"
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.bg-video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: absolute;
+}
+
+.navegation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    z-index: 9;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.logo {
+    height: 70px;
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
+    
+}
+
+.logo-text > span{
+    color: #DDA15E;
+}
+
+.label > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: "Lora";
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu > li{
+    margin-right: 10px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700;
+    transition: .2s;
+}
+.menu > li > a:hover {
+    color: #DDA15E;
+}
+
+.botao-reserva{
+    border: 2px solid white;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 700;
+    transition: all .3s ease-in;
+}
+
+.botao-reserva:hover{
+    color: #DDA15E;
+    background-color: white;
+}
+
+.container-cafe{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.cafe-text{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.cafe-text::after{
+    content: "";
+    top: 55%;
+    left: 50%;
+    transform: translate(-55%, -50%) rotate(45deg);
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.p1{
+    color: #DDA15E;
+    font-size: 16px;
+    font-family: "Playwrite CU";
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.cafe-text > h1{
+    font-size: 68px;
+    color: white;
+    font-family: "Lora";
+    margin-bottom: 15px;
+}
+
+.p2{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: "Playwrite CU";
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: white;
+}
+
+.bt-nossaHistoria{
+    color: white;
+    font-family: "Roboto";
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+    margin-right: 20px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    transition:all .5s ease;
+}
+
+.bt-nossaHistoria:hover{
+    background-color: white;
+    color: #DDA15E;
+}
+
+.bt-verificarMenu{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #BC6C25;
+    border-radius: 50px;
+    padding: 15px 30px;
+    transition: all .5s ease;
+}
+
+.bt-verificarMenu:hover{
+    opacity: .7;
+}
+
+.section-sobre{
+    height: 100vh;
+    width: 100%;
+    background-color: #3d2c18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-video{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.container-video > video{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.video-text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.video-text > h4{
+    position: absolute;
+    color: white;
+    font-family: "Playwrite CU";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 40px;
+    bottom: 0px;
+    padding: 50px;
+    z-index: 1;
+}
+
+.container-text{
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+}
+
+.container-text > h2, p{
+    color: white;
+}
+
+.container-text > h2{
+    font-size: 60px;
+    font-family: "Lora";
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.container-text > h2 > span{
+    color: #DDA15E;
+}
+
+.container-text > p{
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.bt-baristas{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: white;
+    border: white 2px solid;
+    border-radius: 50px;
+    padding: 12px 30px;
+    transition: all .3s ease-in;
+}
+
+.bt-baristas:hover{
+    background-color: white;
+    color: #DDA15E;
+}
+
+.container-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 60px;
+    background-color: #b78752;
+}
+
+.title{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.title > p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.title > h2{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "Roboto";
+    color: white;
+    letter-spacing: 1px;
+}
+
+.cards-team{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.card{
+    border-radius: 20px;
+    position: relative;
+    height: 380px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.gradient{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+    position: absolute;
+    z-index: 1;
+}
+
+.card > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover > img{
+    transform: scale(1.2);
+}
+
+
+.card-text{
+    position: absolute;
+    bottom: 0;
+    padding: 25px;
+    z-index: 2;
+}
+
+.text-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.text-flex > h4{
+    font-family: "Lora";
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 15px;
+}
+
+.text-flex > p{
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: italic;
+    font-size: 12px;
+    background-color: #BC6C25;
+    border-radius: 10px;
+    padding: 3px 6px;
+}
+
+.card-text > p{
+    font-family: "Playwrite CU";
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.section-cardapio{
+    background-image: url(images/bg-img/pexels-allanfranca-3465604.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.container-cardapio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-cafe{
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.list-cafe{
+    width: 100%;
+}
+
+.list-item{
+    margin-bottom: 20px;
+}
+
+.title-manha{
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.title-manha > h4 {
+    color: white;
+    font-size: 30px;
+    font-family: "Lora";
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+}
+
+.flex-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.flex-item > h4{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: "Roboto";
+}
+
+.flex-item > p{
+    font-family: "Lora";
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:#DDA15E;
+}
+
+.list-item > p {
+    padding: 5px;
+    font-family: "Lora";
+    letter-spacing: 1px;
+}
+
+.ambiente{
+    height: auto;
+    width: 100%;
+    padding: 100px;
+    background-color: #3d2c18;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ambiente > h2 {
+    color: white;
+    font-size: 45px;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+}
+
+.container-acordion{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.img-acordion{
+    width: 200px;
+    height: 100%;
+    margin: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: width .5s ease;
+}
+
+.img-acordion > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all .5s ease;
+}
+
+.img-acordion:hover > img {
+    opacity: 0.6;
+}
+
+.img-acordion:hover {
+    width: 80%;
+}
+
+.container-form{
+    background-image: url(images/bg-img/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    width: 700px;
+    z-index: 1;
+    margin: 100px;
+}
+
+.form-box > h2 {
+    padding: 25px 35px;
+    font-size: 30px;
+    font-family: "Lora";
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border-bottom: thin solid #ccc;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px;
+}
+
+.form > input, textarea {
+    width: calc(50% - 5px);
+    height: 48px;
+    border-radius: 10px;
+    border: thin solid #ccc;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    font-family: "Roboto";
+    margin-bottom: 10px;
+}
+
+.form > input:first-child{
+    margin-right: 10px;
+}
+
+.form > input[name=Assunto]{
+    width: 100%;
+}
+
+.form > textarea {
+    width: 100%;
+    height: 150px;
+    padding: 16px;
+}
+
+.form > button {
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: thin solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto";
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .5s ease-in-out;
+}
+
+.form > button:hover {
+    background-color: white;
+    color: #b78752;
+}
+
+footer{
+    background-color: #BC6C25;
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-contato > p {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: "Roboto";
+}
+
+.funcionamento > p {
+    font-size: 25px;
+    font-family: "Roboto";
+    margin-bottom: 15px;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+.flex > p {
+    font-size: 25px;
+    font-family: "Roboto";
+}
+
+.ctt{
+    font-weight: 700;
+}
